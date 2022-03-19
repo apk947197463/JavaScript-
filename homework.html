@@ -1,0 +1,53 @@
+<!--
+	2022-3-19
+	作业
+	计算器
+	
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			//加法
+			function add(){
+				//通过强制转换将字符串类型转换为整型
+				var add1 =parseInt(document.calculator.number1.value);
+				var add2 =parseInt(document.calculator.number2.value);
+				document.calculator.number3.value=add1+add2
+			}
+			//减法
+			function sub(){
+				var add1 =parseInt(document.calculator.number1.value);
+				var add2 =parseInt(document.calculator.number2.value);
+				document.calculator.number3.value=add1-add2
+			}
+			//乘法
+			function multiplication(){
+				var add1 =parseInt(document.calculator.number1.value);
+				var add2 =parseInt(document.calculator.number2.value);
+				document.calculator.number3.value=add1*add2
+			}
+			//除法
+			function except(){
+				var add1 =parseInt(document.calculator.number1.value);
+				var add2 =parseInt(document.calculator.number2.value);
+				document.calculator.number3.value=add1/add2
+			}
+			
+		</script>
+		<form name="calculator">
+		请输入第一个数<input type="text" name="number1"  /><br />
+		请输入第二个数<input type="text" name="number2"  /><br />
+		结果<input type="text" name="number3"  /><br />
+		<input type="button" value=" + " onclick="add()" />
+		<input type="button" value=" - " onclick="sub()" />
+		<input type="button" value=" * " onclick="multiplication()" />
+		<input type="button" value=" / " onclick="except()" />
+		</form>
+		
+	</head>
+	<body>
+	</body>
+</html>
