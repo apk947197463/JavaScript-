@@ -1,1 +1,2 @@
-# JavaScript-
+2022-3-19
+通过JavaScript实现计算器的加减乘除简易功能
